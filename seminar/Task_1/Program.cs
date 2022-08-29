@@ -1,8 +1,9 @@
 ﻿Console.Clear();
 
 
-Console.Write("Enter two integer numbers ");
+Console.Write("Enter first integer numbers ");
 int numA = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter second integer numbers ");
 int numB = Convert.ToInt32(Console.ReadLine());
 
 if(numA / numA == numB);
