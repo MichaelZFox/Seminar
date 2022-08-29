@@ -5,25 +5,12 @@ Console.Write("Enter two integer numbers ");
 int numA = Convert.ToInt32(Console.ReadLine());
 int numB = Convert.ToInt32(Console.ReadLine());
 
-int max = numA;
-int min = numB;
-
-if(numA > max)
-{ max = numA;
-  min = numB;
-}
-if(numB > max) 
+if(numA / numA == numB);
 {
-    max = numB;
-    min = numA;
+    Console.WriteLine($"Число {numA} является квадратом числа {numB}");
 }
 
-if(min * min == max)
+if (numA / numA != numB);
 {
-    Console.WriteLine($"Число {min} является квадратом числа {max}");
-}
-
-if(min * min != max)
-{
-    Console.WriteLine($"Число{min} не является квадратом числа {max}");
+    Console.WriteLine($"Число {numA} не является квадратом числа {numB}");
 }
