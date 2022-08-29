@@ -10,6 +10,8 @@
 // -7 -> 49
 
 Console.Clear();
+//string str = "Hello !"; 
+
 Console.Write("Enter integer number ");
 int num = Convert.ToInt32(Console.ReadLine());
 // int num = 4;
