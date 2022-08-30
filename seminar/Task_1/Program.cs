@@ -2,17 +2,10 @@
 
 
 Console.Write("Enter first integer number ");
-int numA = Convert.ToInt32(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Enter second integer number ");
-int numB = Convert.ToInt32(Console.ReadLine());
+int res = 0;
 
-if(numA / numA == numB);
-{
-    Console.WriteLine($"Число {numA} является квадратом числа {numB}");
-}
+res = num * num; 
 
-if (numA / numA != numB);
-{
-    Console.WriteLine($"Число {numA} не является квадратом числа {numB}");
-}
+Console.WriteLine($"{res}");
