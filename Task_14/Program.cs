@@ -6,17 +6,23 @@
 // 161 -> да
 
 Console.Clear();
+int Multiplicity(int number)
+{
+    int res1 = number % 7;
+    int res2 = number % 23;
+
+    if (res1 == 0 && res2 == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
 
 Console.WriteLine("Введите число");
 int num = Convert.ToInt32(Console.ReadLine());
-int res1 = num % 7;
-int res2 = num % 23;
-
-if(res1 == 0 && res2 == 0)
-{
-Console.WriteLine($"Число {num} кратно числам 7 и 23");
-}
-else
-{
-    Console.WriteLine($"Число {num} не кратно числам 7 и 23");
-}
+int multiplicity = Multiplicity(num);
+if (multiplicity == 1) Console.WriteLine($"Число {num} кратно числам 7 и 23");
+else Console.WriteLine($"Число {num} не кратно числам 7 и 23");
