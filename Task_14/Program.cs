@@ -8,10 +8,11 @@
 Console.Clear();
 int Multiplicity(int number)
 {
+
     int res1 = number % 7;
     int res2 = number % 23;
 
-    if (res1 == 0 && res2 == 0)
+    if (res1 == 0 && res2 == 0 && number != 0)
     {
         return 1;
     }
