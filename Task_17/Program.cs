@@ -2,22 +2,21 @@
 // Причем точки (x, y) != 0. И выдвет номер четверти плоскости, 
 // в которой находится эта точка. 
 
-Console.Clear();
 
-Console.WriteLine("Введите координаты точки ");
+Console.WriteLine("Введите параметры координт точки ");
 Console.Write("X: ");
 int x = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("Введите координаты y");
+Console.WriteLine("Введите параметры координт точки ");
 Console.Write("Y: ");
 int y = Convert.ToInt32(Console.ReadLine());
+
 
 if (x > 0 && y > 0)
 {
     Console.WriteLine("Первая четверть ");
 }
 
-else if  (x < 0 && y > 0)
+else if (x < 0 && y > 0)
 {
     Console.WriteLine("Вторая четверть ");
 }
