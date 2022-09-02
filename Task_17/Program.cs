@@ -12,24 +12,14 @@ Console.WriteLine("Введите координаты y");
 Console.Write("Y: ");
 int y = Convert.ToInt32(Console.ReadLine());
 
-if (x > 0 && y > 0)
+string Quarter(int xc, int yc)
 {
-    Console.WriteLine("Первая четверть ");
+if (x > 0 && y > 0) return "Первая четверть";
+if (x < 0 && y > 0) return "Вторая четверть";
+if (x < 0 && y < 0) return "Третья четверть";
+if (x > 0 && y < 0) return "Четвертая четверть";
+return "Введены некорректные данные";
 }
 
-else if  (x < 0 && y > 0)
-{
-    Console.WriteLine("Вторая четверть ");
-}
-
-else if (x < 0 && y < 0)
-{
-    Console.WriteLine("Третья четверть ");
-}
-
-else if (x > 0 && y < 0)
-{
-    Console.WriteLine("Первая четверть ");
-}
-
-else Console.WriteLine("Введенны не корректные данные");
+string res = Quarter(x, y);
+Console.WriteLine(res);
