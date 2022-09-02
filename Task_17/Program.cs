@@ -20,6 +20,5 @@ if (x < 0 && y < 0) return "Третья четверть";
 if (x > 0 && y < 0) return "Четвертая четверть";
 return "Введены некорректные данные";
 }
-
 string res = Quarter(x, y);
 Console.WriteLine(res);
