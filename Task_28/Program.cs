@@ -5,16 +5,15 @@
 Console.WriteLine("Введите число");
 double number = Convert.ToInt32(Console.ReadLine());
 
-double GetDigit(double num)
+double Factorial(double num)
 {
     double count = 1;
     for (double i = 1; i <= num; i++)
     {
         count = count * i;
     }
-    
     return count;
 }
 
-double result = GetDigit(number);
+double result = Factorial(number);
 Console.WriteLine(result);
