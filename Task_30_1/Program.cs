@@ -14,16 +14,17 @@ void FillArray(int[] collection)  //Заполняем массив рандом
     }
 }
 
-void PrintArray(int[] coll) // Печатаем массив с помощью метода void
+void PrintArray(int[] arr) // Печатаем массив с помощью метода void
 {
-    int count = coll.Length;
-    int position = 0; 
-    while(position < count)
+    int count = arr.Length;
+    Console.Write("["); 
+    
+    for(int position = 0; position < count; position++)
     {
-      
-        Console.Write($" {coll[position]} ");
-        position++;
+        Console.Write(arr[position]);
+        if(position != arr.Length -1) Console.Write(",");
     }
+    Console.WriteLine("]");
 }
 
 
